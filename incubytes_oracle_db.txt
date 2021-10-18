@@ -1,0 +1,15 @@
+CREATE TABLE patients(
+  cust_ID varchar(18) NOT NULL,
+  Name varchar(255) NOT NULL,
+  Open_date date NOT NULL,
+  Consult_dt date NOT NULL,
+  VAC_ID char(5) NOT NULL,
+  Dr_Name varchar(45) DEFAULT NULL,
+  State char(5) DEFAULT NULL,
+  Country char(5) NOT NULL,
+  DOB date DEFAULT NULL,
+  Active char(3) NOT NULL,
+  PRIMARY KEY (cust_ID)
+)
+
+insert into patients values(123457,'Alex','12-oct-2010','13-oct-2012','MVD','Paul','SA','USA','6-mar-1987','A')
